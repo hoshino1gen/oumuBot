@@ -182,7 +182,8 @@ else :
 //      $SendMessage->add($TextMessageBuilder2);
     }
 
-    $bot->replyMessage($event->getReplyToken(), $SendMessage);
+//    $bot->replyMessage($event->getReplyToken(), $SendMessage);
+    $bot->replyMessage($event->getReplyToken(), $event->getMessage()  );
 
 /*
     syslog(LOG_EMERG, 'システムは使用不可');
