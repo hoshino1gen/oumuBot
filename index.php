@@ -183,7 +183,7 @@ else :
     }
 
 //    $bot->replyMessage($event->getReplyToken(), $SendMessage);
-    $bot->replyMessage($event->getReplyToken(), $event->getMessage()  );
+    $bot->replyMessage($event->getReplyToken(), $event->getText() . ""  );
 
 /*
     syslog(LOG_EMERG, 'システムは使用不可');
