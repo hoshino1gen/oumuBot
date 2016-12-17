@@ -166,7 +166,7 @@ else :
 */
 
   
-
+/*
 
     $TextMessageBuilder = new TextMessageBuilder("はいはい、起きてるぜー");
 //    $TextMessageBuilder1 = new TextMessageBuilder("出勤を記録しました。");
@@ -181,9 +181,12 @@ else :
 //      $SendMessage->add($TextMessageBuilder1);
 //      $SendMessage->add($TextMessageBuilder2);
     }
+*/
 
 //    $bot->replyMessage($event->getReplyToken(), $SendMessage);
-    $bot->replyMessage($event->getReplyToken(), $event->getText() );
+//    $bot->replyMessage($event->getReplyToken(), $event->getText() );
+    $bot->replyText($event->getReplyToken(), $event->getText());
+
 
 /*
     syslog(LOG_EMERG, 'システムは使用不可');
