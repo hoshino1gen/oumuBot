@@ -101,11 +101,11 @@ foreach ($events as $event) {
 
 
   if (date("H") >= 6 and date("H") <= 11) {
-        $textAisatsu = "げんさん、おはようございます!";
+        $textAisatsu = "おはようございます!";
   } elseif (date("H") >= 12 and date("H") <= 17) { 
-        $textAisatsu = "げんさん、こんにちわ!";
+        $textAisatsu = "こんにちわ!";
   } else {
-        $textAisatsu = "げんさん、こんばんわ!";
+        $textAisatsu = "こんばんわ!";
   }
 
 //      error_log('BEACON');
