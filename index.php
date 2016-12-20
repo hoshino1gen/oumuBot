@@ -90,11 +90,6 @@ foreach ($events as $event) {
 
     error_log('event event:'  . print_r( $event, true) );
 
-
-
-
-
-
   if (($event instanceof \LINE\LINEBot\Event\BeaconDetectionEvent)) {
 
     $SendMessage10 = new MultiMessageBuilder();
@@ -122,7 +117,6 @@ foreach ($events as $event) {
       $TextMessageBuilder10 = new TextMessageBuilder($textAisatsu .  "\n「退勤」を記録しました。\n " . date( "m月d日 H時i分s秒")  );
     }
 
-//    $SendMessage10->add($TextMessageBuilder9);
     $SendMessage10->add($TextMessageBuilder10);
 
     $bot->pushMessage( "U6215b5100ad5069afdce9f10ac988bd3" , $SendMessage10);
@@ -132,7 +126,6 @@ foreach ($events as $event) {
   if (!($event instanceof \LINE\LINEBot\Event\MessageEvent)) {
     error_log('Non message event has come');
 
-//    error_log('event event:'  . print_r( $event, true) );
 
     continue;
   }
